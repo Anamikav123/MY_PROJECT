@@ -1,0 +1,32 @@
+ORM Queries:
+CRUD 
+1.create 
+  modelname.objects.create(field1=val1,field2)=val2,field3=val3......)
+  StudentModel.objects.create(first="anu",last="vc",age=2,address="hrfgjtghrbnhd",phone=9921423542,email="hdfj@gmail.com")
+
+
+
+
+  3.update
+
+
+
+  StudentModel.objects.get(id=2)
+  obj.last="kv"
+  obj.age=20
+  obj.save()
+   
+
+OR
+
+StudentModel.objects.filter(id=2).update(last="kv",age=20)
+
+
+
+4---delete
+
+obj=StudentModel.objects.get(id=2)
+obj.delete()
+ OR
+
+ StudentModel.objects.filter(id=2).delete()
